@@ -15,3 +15,15 @@ summary(lm(formula = mpg ~ vehicle_length + vehicle_weight + spoiler_angle + gro
 - The slope of the linear model is not 0. The p-value is 5.35e-11, which is lower than the 0.05 assumed statistical signifigance. 
 - The linear model effectively predicts the mpg of MechaCar prototypes. The r-squared value of 0.7149 determines a 71% probability for accurate predictions.
 
+## Summary Statistics on Suspension Coils
+Next, I created summary and lot dataframes which included the mean, median, variance, and standard deviation of the PSI for all manufacturing lots.
+
+![total_summary](https://github.com/lindseyasterman/MechaCar_Statistical_Analysis/blob/main/total_summary.png)
+![lot_summary](https://github.com/lindseyasterman/MechaCar_Statistical_Analysis/blob/main/lot_summary.png)
+
+The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. 
+- The total summary suggests that all lots meet design specifications, with a variance of 62 PSI.
+- The individual lot summaries tell a much different story.  
+- Lot 1 has almost no variance at 0.98. 
+- Lot 2 is still well within specifications at a 7.47 variance. 
+- Lot 3 greatly exceeds the design specifications at 170.29 variance.  
