@@ -44,7 +44,9 @@ Finally, I used t-tests to compare manufacturing lots against the mean PSI of th
 - The Lot 3 t-test shows a mean of 1496.14 and p-value of 0.04.  Lot 3 does not have a p-value higher than the comon significance level of 0.05.  This lot is statistically different than the mean of the population.
 
 ## Study Design: MechaCar vs Competition
-What metric or metrics are you going to test?
-What is the null hypothesis or alternative hypothesis?
-What statistical test would you use to test the hypothesis? And why?
-What data is needed to run the statistical test?
+Are consumers more loyal to MechaCar or the competition?
+- Metrics to test: length of ownership, repeat purchase
+- Null hypothesis: no statistical difference in brands (statistically unable to predict future brand purchase based on past purchases)
+- Alternative hypothesis: correlation between metrics and probability of future purchase 
+- Test: two-sample t-test with the independent variable equal to lenght of ownership by brand and the dependent variable equal to repeat purchase rate
+- Data: collect purchase dates by brand and individuals over 10+ years

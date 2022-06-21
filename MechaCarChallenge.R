@@ -15,13 +15,12 @@ total_summary <- suspension_coil_table %>% summarize(Mean=mean(PSI),Median=media
 
 lot_summary <- suspension_coil_table %>% group_by(Manufacturing_Lot) %>% summarize(Mean=mean(PSI),Median=median(PSI),Variance=var(PSI),SD=sd(PSI),.groups = 'keep')
 
-
 #Deliverable 3
 
-t.test(suspension_coil_table$PSI,mu=mean(suspension_coil_table$PSI))
+t.test(suspension_coil_table$PSI,mu=1500)
 
-t.test(subset(suspension_coil_table$PSI,suspension_coil_table$Manufacturing_Lot == "Lot1"),mu=mean(suspension_coil_table$PSI))
+t.test(subset(suspension_coil_table$PSI,suspension_coil_table$Manufacturing_Lot == "Lot1"),mu=1500)
 
-t.test(subset(suspension_coil_table$PSI,suspension_coil_table$Manufacturing_Lot == "Lot2"),mu=mean(suspension_coil_table$PSI))
+t.test(subset(suspension_coil_table$PSI,suspension_coil_table$Manufacturing_Lot == "Lot2"),mu=1500)
 
-t.test(subset(suspension_coil_table$PSI,suspension_coil_table$Manufacturing_Lot == "Lot3"),mu=mean(suspension_coil_table$PSI))
+t.test(subset(suspension_coil_table$PSI,suspension_coil_table$Manufacturing_Lot == "Lot3"),mu=1500)
